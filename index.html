@@ -275,15 +275,8 @@
             border-radius: 5px;
             font-size: 0.8rem;
         }
-        
 
-
-
-                      
-     
-
-
-/* Expertise Section */
+        /* Expertise Section */
         #expertise {
             background-color: var(--light);
         }
@@ -293,6 +286,7 @@
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 20px;
         }
+        
         .skill-card {
             display: flex;
             align-items: center;
@@ -303,25 +297,17 @@
             background-color: rgba(255, 255, 255, 0.03);
             transition: 0.3s;
         }
+        
         .skill-card img {
             width: 28px;
             height: 28px;
             object-fit: contain;
         }
+        
         .skill-card:hover {
             background-color: rgba(255, 255, 255, 0.1);
             transform: scale(1.02);
         }
-
-
-
-
-
-
-
-
-
-
 
         /* Contact Section */
         #contact {
@@ -372,6 +358,31 @@
             .projects-container, .certificates-container {
                 grid-template-columns: 1fr;
             }
+
+            .btn {
+                padding: 10px 20px; /* Adjust button padding */
+                font-size: 1rem; /* Adjust font size */
+            }
+
+            .project-img, .certificate-img {
+                height: 200px; /* Adjust image height for mobile */
+            }
+
+            .project-info h3, .certificate-info h3 {
+                font-size: 1.2rem; /* Adjust heading size */
+            }
+
+            .project-info p, .certificate-info p {
+                font-size: 0.9rem; /* Adjust paragraph size */
+            }
+
+            .social-links {
+                flex-direction: column; /* Stack social links vertically */
+            }
+
+            .social-links a {
+                margin: 5px 0; /* Add margin for spacing */
+            }
         }
     </style>
 </head>
@@ -383,34 +394,16 @@
                 <div class="hero-text">
                     <h1>Hi, I'm <span>Rohit Shelke</span></h1>
                     <p>I'm a passionate professional with expertise in various domains. This portfolio showcases my work, certificates, and achievements in my field.</p>
-
-
-                    
-
                     <a href="#projects" class="btn">View My Work</a>
                 </div>
                 <div class="hero-image">
-                    <img src="img/rohitimg.jpeg" alt="Professional headshot of Your Name, smiling confidently wearing business casual attire with a blurred office background" />
+                    <img src="img/rohitimg.jpeg" alt="Professional headshot of Rohit Shelke, smiling confidently" />
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-<!-- Expertise Section -->
+    <!-- Expertise Section -->
     <section id="expertise">
         <div class="container">
             <div class="section-title">
@@ -420,41 +413,21 @@
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /> Java
                 </div>
-                
-               <div class="skill-card">
-                    <img src="img/html.png" alt="Java" /> Html
+                <div class="skill-card">
+                    <img src="img/html.png" alt="HTML" /> HTML
                 </div>
-                
-               <div class="skill-card">
-                    <img src="img/css.png" alt="Java" /> Css
+                <div class="skill-card">
+                    <img src="img/css.png" alt="CSS" /> CSS
                 </div>
-
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /> MySQL
                 </div>
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /> Git
                 </div>
-                
-                
             </div>
         </div>
     </section>
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Certificates Section -->
     <section id="certificates">
@@ -465,60 +438,51 @@
             <div class="certificates-container">
                 <div class="certificate-card">
                     <div class="certificate-img">
-                        <img src="img/patent.jpeg" alt="Professional certification document with gold seal and dark blue ribbon" />
+                        <img src="img/patent.jpeg" alt="Patent certificate with gold seal and dark blue ribbon" />
                     </div>
                     <div class="certificate-info">
-                        <h3>Patent certificate</h3>
-                        <p>Issued by: goverment of india</p>
+                        <h3>Patent Certificate</h3>
+                        <p>Issued by: Government of India</p>
                         <a href="img/patent.jpeg" class="btn">View Certificate</a>
                     </div>
                 </div>
                 <div class="certificate-card">
                     <div class="certificate-img">
-                        <img src="img/hackaton.jpeg" alt="Modern digital badge with gradient background and achievement icon" />
+                        <img src="img/hackaton.jpeg" alt="Hackathon digital badge with gradient background" />
                     </div>
                     <div class="certificate-info">
-                        <h3>Hackaton</h3>
+                        <h3>Hackathon</h3>
                         <p>Issued by: Sunstone</p>
                         <a href="img/hackaton.jpeg" class="btn">View Certificate</a>
                     </div>
                 </div>
-
-
-<div class="certificate-card">
+                <div class="certificate-card">
                     <div class="certificate-img">
-                        <img src="img/NSS Camp.jpeg" alt="Modern digital badge with gradient background and achievement icon" />
+                        <img src="img/NSS Camp.jpeg" alt="NSS Special Camp certificate" />
                     </div>
                     <div class="certificate-info">
                         <h3>NSS Special Camp</h3>
-                        <p>Issued by: Ajeenkya Dy Patil University</p>
+                        <p>Issued by: Ajeenkya D Y Patil University</p>
                         <a href="img/NSS Camp.jpeg" class="btn">View Certificate</a>
                     </div>
                 </div>
-
-
-<div class="certificate-card">
-                    <div class="certificate-img">
-                        <img src="img/phyton .jpeg" alt="Modern digital badge with gradient background and achievement icon" />
-                    </div>
-                    <div class="certificate-info">
-                        <h3>Phyton</h3>
-                        <p>Issued by: Lets Upgrade</p>
-                        <a href="img/phyton .jpeg" class="btn">View Certificate</a>
-                    </div>
-                </div>
-
-
-
-
-
                 <div class="certificate-card">
                     <div class="certificate-img">
-                        <img src="img/nss nukkad natak.jpeg" alt="Traditional diploma with university crest and calligraphy text on parchment" />
+                        <img src="img/phyton.jpeg" alt="Python certificate" />
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Python</h3>
+                        <p>Issued by: Lets Upgrade</p>
+                        <a href="img/phyton.jpeg" class="btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-img">
+                        <img src="img/nss nukkad natak.jpeg" alt="NSS Nukkad Natak certificate" />
                     </div>
                     <div class="certificate-info">
                         <h3>NSS Nukkad Natak</h3>
-                        <p>Issued by: Ajeenkya Dy Patil University</p>
+                        <p>Issued by: Ajeenkya D Y Patil University</p>
                         <a href="img/nss nukkad natak.jpeg" class="btn">View Certificate</a>
                     </div>
                 </div>
@@ -532,51 +496,47 @@
             <div class="section-title">
                 <h2>My Projects</h2>
             </div>
-            <div class="projects-filter">
-                
-            </div>
             <div class="projects-container">
                 <div class="project-card" data-category="web">
                     <div class="project-img">
-                        <img src="img/LWR.png" alt="Dashboard interface showing analytics charts and metrics on a dark theme with blue accents" />
+                        <img src="img/LWR.png" alt="Learn With Rohit dashboard interface" />
                     </div>
                     <div class="project-info">
                         <h3>Learn With Rohit</h3>
-                        <p>Learn With Rohit: Your Learning Hub.</p>
+                        <p>Your Learning Hub.</p>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
-                            <span>JAVA SCRIPT</span>
+                            <span>JavaScript</span>
                         </div>
                         <a href="https://learn-with-rohit.vercel.app/" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="project-card" data-category="mobile">
                     <div class="project-img">
-                        <img src="img/Online Voting System.png" alt="Mobile app screens showing fitness tracking features on an iPhone mockup" />
+                        <img src="img/Online Voting System.png" alt="Online Voting System app screens" />
                     </div>
                     <div class="project-info">
                         <h3>Online Voting System</h3>
                         <p>Allows users to cast their votes securely and electronically via the internet.</p>
                         <div class="project-tags">
                             <span>DBMS</span>
-                            <span>My SQL</span>
-                          
+                            <span>MySQL</span>
                         </div>
                         <a href="pdf/ONLINE VOTING SYSTEM(DBMS) FINAL.pdf" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="project-card" data-category="design">
                     <div class="project-img">
-                        <img src="img/Tic Tac Toe.png" alt="Brand identity materials including logo variations, business cards, and stationery" />
+                        <img src="img/Tic Tac Toe.png" alt="Tic Tac Toe game interface" />
                     </div>
                     <div class="project-info">
                         <h3>Tic Tac Toe</h3>
-                        <p>Tic Tac Toe is a simple two-player game where players take turns marking X or O in a 3×3 grid.</p>
+                        <p>A simple two-player game where players take turns marking X or O in a 3×3 grid.</p>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
-                            <span>JAVA SCRIPT</span>
+                            <span>JavaScript</span>
                         </div>
                         <a href="https://rohitshelke.tiiny.site" class="btn">View Project</a>
                     </div>
@@ -592,66 +552,8 @@
                 <h2>Get In Touch</h2>
             </div>
             <p>Feel free to reach out for collaborations or just to say hello!</p>
-            
             <p>Email: <a href="mailto:rohitshelke2006@gmail.com">rohitshelke@gmail.com</a></p>
-
-
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/rohit-shelke-02429832b/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/rohitshelke26" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/rohit_shelke_26?igsh=dTQ1MzFndGx3ZXBy" title="Instagram"><i class="fab fa-instagram"></i></a>
-              
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Project filtering functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const projectCards = document.querySelectorAll('.project-card');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
-                    button.classList.add('active');
-                    
-                    const filterValue = button.getAttribute('data-filter');
-                    
-                    projectCards.forEach(card => {
-                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-            
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 50,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
-
-
-
-
-
-
-</body>
-</html>
+                <a href="#"
